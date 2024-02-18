@@ -1,0 +1,314 @@
+// Start Intro Section
+.intro-section {
+  background-color: $primaryColor;
+  padding: 40px 0;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    clip-path: polygon(0 0, 69% 0, 33% 100%, 13% 100%);
+    background-color: #e0c68e;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: rgba(#e0e0e0, 0.16);
+    top: 50%;
+    right: -350px;
+    width: 450px;
+    height: 488px;
+    transform: translateY(-50%) rotate(45deg);
+    border-radius: $thirdBorderRadius;
+  }
+
+  .intro-title {
+    font-size: 5.3rem;
+    line-height: 1.7;
+    font-weight: 500;
+  }
+
+  .intro-parg {
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: $secondaryColor;
+    margin-top: 13px;
+    margin-bottom: 47px;
+  }
+  .asp-om {
+    @include p-bottom(633, 548);
+  }
+
+  @include sm {
+    .row_modify {
+      flex-direction: column-reverse;
+      row-gap: 30px;
+    }
+
+    .intro-desc {
+      text-align: center;
+    }
+
+    .site_link {
+      margin: 0 auto;
+    }
+  }
+}
+// End Intro Section
+
+// Start About us home
+.home-about-us {
+  .figure-wrapper {
+    max-width: 350px;
+
+    @include sm {
+      margin: 0 auto;
+    }
+  }
+
+  .asp-om {
+    @include p-bottom(283, 350);
+  }
+}
+
+.about-us-desc {
+  position: relative;
+  padding: 30px 0;
+  padding-inline-start: 90px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 500%;
+    height: 100%;
+    background-color: rgba($primaryColor, 0.07);
+    top: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 41px;
+  }
+
+  .title {
+    font-size: 3.9rem;
+    font-weight: 500;
+    color: $secondaryColor;
+    margin-bottom: 30px;
+  }
+
+  .parg {
+    font-size: 2.2rem;
+    font-weight: 300;
+    color: $secondaryColor;
+  }
+
+  @include xxs {
+    text-align: center;
+    padding-inline-start: 0px;
+    padding: 30px;
+    &::before {
+      width: 100%;
+    }
+  }
+}
+// End About us home
+
+// Start Home Message&Vision
+.home-message-vision {
+  padding-top: 80px;
+  padding-bottom: 90px;
+
+  @include sm {
+    padding-top: 110px;
+  }
+}
+
+.home-message-vision {
+  .figure-wrapper {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: rgba($primaryColor, 0.25);
+      top: 0;
+      left: 50%;
+      border-radius: 61px;
+      transform: rotate(-25deg);
+    }
+  }
+  .row_modify {
+    row-gap: 30px;
+  }
+
+  .asp-om {
+    border-radius: $mainBorderRadius;
+    overflow: hidden;
+  }
+
+  .title {
+    font-size: 3.9rem;
+    font-weight: 500;
+    color: $primaryColor;
+    margin-bottom: 28px;
+  }
+  .parg {
+    font-size: 2.1rem;
+    font-weight: 400;
+    color: #7c7c7c;
+  }
+
+  @include sm {
+    .desc {
+      text-align: center;
+    }
+  }
+}
+
+.message-wrapper {
+  @include sm {
+    margin-bottom: 80px;
+  }
+  .figure-wrapper {
+    &::before {
+      @include sm {
+        left: 0;
+      }
+    }
+  }
+
+  margin-bottom: 30px;
+  .asp-om {
+    @include p-bottom(390.34, 635.59);
+    left: 40%;
+
+    @include sm {
+      left: 0;
+    }
+  }
+}
+
+.vision-wrapper {
+  @include sm {
+    .row_modify {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .figure-wrapper {
+    &::before {
+      right: 50%;
+      transform: rotate(25deg);
+
+      @include sm {
+        right: 0;
+      }
+    }
+  }
+  .asp-om {
+    @include p-bottom(390.34, 635.59);
+    right: 40%;
+
+    @include sm {
+      right: 0;
+    }
+  }
+}
+
+// End Home Message&Vision
+
+// Start Contact Us
+.contact-us-desc-wrapper {
+  margin: 0 auto;
+  border-radius: 10px 10px 0 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+
+  @include xxs {
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: unset;
+  }
+
+  align-items: center;
+  .contact-block {
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+    .contact-desc {
+      .title {
+        font-size: 2.1rem;
+        color: $primaryColor;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+      .subtitle {
+        margin-inline-end: 10px;
+        font-size: 1.6rem;
+        color: $secondaryColor;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .figure-block {
+    width: 80px;
+    height: 77px;
+    border-radius: $thirdBorderRadius;
+    background-color: #faf6f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+
+    .img-om {
+      max-width: 35px;
+      max-height: 35px;
+      transition: 0.4s;
+    }
+
+    &:hover {
+      .img-om {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+.iframe-wrapper {
+  position: relative;
+  .iframe {
+    width: 100%;
+    border-radius: $thirdBorderRadius;
+    min-height: 273px;
+  }
+  .iframe-desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: $thirdBorderRadius;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 45px;
+
+    .figure__ {
+      flex-shrink: 0;
+    }
+
+    .title {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+  }
+}
+
+// End Contact Us
