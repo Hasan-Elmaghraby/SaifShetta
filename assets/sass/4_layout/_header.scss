@@ -13,7 +13,7 @@
   position: relative;
   z-index: 111;
   background-color: #fff;
-  padding: 35px 0;
+  padding: 35px 0 25px 0;
 
   @include sm {
     padding: 10px 0;
@@ -50,7 +50,7 @@
 
 .top_header {
   padding: 30px 0 0;
-  
+
   @include xs {
     padding: 10px 0 0;
   }
@@ -58,23 +58,23 @@
   @include sm {
     justify-content: space-between;
   }
-  
+
   .header_contacts__ {
     position: relative;
     height: 53px;
     padding-inline-end: 45px;
     flex-shrink: 0;
-    
+
     @include xs {
       padding-inline-end: 10px;
     }
-    
+
     @include xxs {
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
     }
-    
+
     &::after {
       content: "";
       position: absolute;
@@ -87,10 +87,10 @@
       z-index: -1;
     }
   }
-  
+
   .header_social__ {
     margin-inline-start: 22px;
-    
+
     @include sm {
       margin: 0;
       flex-direction: column;
@@ -105,7 +105,7 @@
 
     .header_social_list__ {
       display: grid;
-      grid-template-columns: repeat(5 , minmax(30px,40px));
+      grid-template-columns: repeat(5, minmax(30px, 40px));
       margin-inline-start: 12px;
       gap: 8px;
 

@@ -25,7 +25,7 @@
   font-size: 1.6rem;
   font-weight: 700;
   color: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 43px;
   position: relative;
   &::after,
   &::before {
@@ -42,12 +42,12 @@
   &::after {
     width: 45px;
     height: 3px;
-    top: calc(100% + 13px);
+    top: calc(100% + 11px);
     border-radius: 2px;
   }
 
   &::before {
-    top: calc(100% - 7px);
+    top: calc(100% - 8px);
     width: 20px;
     height: 20px;
     clip-path: polygon(22% 65%, 100% 100%, 100% 100%, 0% 100%);
@@ -88,7 +88,7 @@
     display: flex;
     align-items: center;
     text-align: start;
-    gap: 15px;
+    gap: 2px;
 
     @include xxs {
       font-size: 9px;
@@ -149,8 +149,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 44px;
-    height: 44px;
+    width: 32px;
+    height: 32px;
     transition: 0.5s;
     background-color: #fff;
     border: 1px solid rgba(#fff, 0.34);
@@ -178,12 +178,13 @@
   padding: 15px 0;
   color: #fff;
   margin: 0;
-  font-size: 14px;
+  font-size: 13px;
   display: flex;
   align-items: center;
   background-color: #413f3f;
   border: 0;
   margin-top: 50px;
+  font-weight: 300;
 
   @include sm {
     padding: 20px 0;

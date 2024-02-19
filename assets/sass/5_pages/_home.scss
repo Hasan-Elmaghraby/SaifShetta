@@ -1,7 +1,7 @@
 // Start Intro Section
 .intro-section {
   background-color: $primaryColor;
-  padding: 40px 0;
+  padding: 40px 0 60px 0;
   position: relative;
 
   &::before {
@@ -67,7 +67,7 @@
     max-width: 350px;
 
     @include sm {
-      margin: 0 auto;
+      margin: 30px auto;
     }
   }
 
@@ -140,6 +140,10 @@
       left: 50%;
       border-radius: 61px;
       transform: rotate(-25deg);
+
+      @include xxs {
+        border-radius: 45px;
+      }
     }
   }
   .row_modify {
@@ -149,6 +153,10 @@
   .asp-om {
     border-radius: $mainBorderRadius;
     overflow: hidden;
+
+    @include xxs {
+      border-radius: 45px;
+    }
   }
 
   .title {
@@ -250,10 +258,38 @@
         margin-bottom: 20px;
       }
       .subtitle {
-        margin-inline-end: 10px;
+        margin-inline-end: 20px;
         font-size: 1.6rem;
         color: $secondaryColor;
         font-weight: 400;
+        position: relative;
+        display: inline-block;
+
+        @include xs {
+          margin-bottom: 10px;
+        }
+        &.with-shape {
+          &::before {
+            position: absolute;
+            position: absolute;
+            content: "";
+            width: 3px;
+            height: 7px;
+            background-color: $primaryColor;
+            top: 8px;
+            right: -10px;
+            border-radius: 3px;
+          }
+          .shape {
+            position: absolute;
+            width: 3px;
+            height: 20px;
+            background-color: rgba($primaryColor, 0.12);
+            display: inline-block;
+            right: -10px;
+            border-radius: 3px;
+          }
+        }
       }
     }
   }
@@ -268,6 +304,11 @@
     align-items: center;
     flex-shrink: 0;
 
+    @include xs {
+      width: 58px;
+      height: 58px;
+      border-radius: 20px;
+    }
     .img-om {
       max-width: 35px;
       max-height: 35px;
@@ -299,6 +340,14 @@
     left: 50%;
     transform: translateX(-50%);
     padding: 10px 45px;
+
+    @include xs {
+      padding: 10px;
+    }
+    @include xxs {
+      padding: 10px;
+      width: 205px;
+    }
 
     .figure__ {
       flex-shrink: 0;

@@ -89,7 +89,7 @@
 
 // swiper-pagination
 .swiper-pagination {
-  position: static;
+  position: static !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -97,9 +97,8 @@
   gap: 6px;
 
   &.intro_swiper_pagination {
-    position: absolute !important;
-    top: calc(100% - 150px) !important;
-    inset-inline-start: 124px !important;
+    // top: calc(100% - 150px) !important;
+    // inset-inline-start: 124px !important;
     width: fit-content;
     flex-wrap: wrap;
     max-width: 40%;
@@ -109,7 +108,11 @@
     }
 
     @include sm {
-      inset-inline-start: 44% !important;
+      width: 100%;
+      // inset-inline-start: 44% !important;
+      right: unset !important;
+      left: 50%;
+      transform: translateX(-50%);
       top: calc(100% - 32px) !important;
     }
   }
