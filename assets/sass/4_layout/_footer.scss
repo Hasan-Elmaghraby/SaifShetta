@@ -170,6 +170,8 @@
 
     img {
       filter: none;
+      max-width: 15px;
+      max-height: 15px;
     }
 
     &:hover {
