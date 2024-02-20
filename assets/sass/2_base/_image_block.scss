@@ -4,6 +4,7 @@
   height: fit-content;
 
   img {
+    mix-blend-mode: multiply;
     max-width: 100%;
     max-height: 100%;
     transition: 0.5s;
@@ -12,7 +13,7 @@
 
   &.center {
     width: fit-content;
-    margin:  0 auto;
+    margin: 0 auto;
   }
 }
 

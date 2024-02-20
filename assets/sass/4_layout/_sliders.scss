@@ -101,7 +101,7 @@
     // inset-inline-start: 124px !important;
     width: fit-content;
     flex-wrap: wrap;
-    max-width: 40%;
+    max-width: 100%;
 
     @include md {
       top: calc(100% - 45px) !important;
@@ -112,8 +112,10 @@
       // inset-inline-start: 44% !important;
       right: unset !important;
       left: 50%;
-      transform: translateX(-50%);
+      // transform: translateX(-50%);
       top: calc(100% - 32px) !important;
+      max-width: 100%;
+      margin-top: 50px;
     }
   }
 }

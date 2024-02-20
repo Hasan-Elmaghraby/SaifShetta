@@ -10,10 +10,12 @@
   }
   @include sm {
     min-width: 80px;
+    max-width: 80px;
   }
 
   @include xs {
-    min-width: 80px;
+    min-width: 75px;
+    max-width: 75px;
   }
 
   .figure__ {
