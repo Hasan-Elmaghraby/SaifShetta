@@ -1,5 +1,6 @@
 // Start Intro Section
 .intro-section {
+  overflow: hidden;
   background-color: $primaryColor;
   padding: 40px 0 60px 0;
   position: relative;
@@ -96,7 +97,7 @@
     height: 100%;
     background-color: rgba($primaryColor, 0.07);
     top: 0;
-    right: 0;
+    inset-inline-start: 0;
     z-index: -1;
     border-radius: 41px;
   }
@@ -149,9 +150,9 @@
       height: 100%;
       background-color: rgba($primaryColor, 0.25);
       top: 0;
-      left: 50%;
       border-radius: 61px;
       transform: rotate(-25deg);
+      z-index: -1;
 
       @include xxs {
         border-radius: 45px;
@@ -159,10 +160,11 @@
     }
   }
   .row_modify {
-    row-gap: 30px;
+    row-gap: 70px;
   }
 
   .asp-om {
+    z-index: 1;
     border-radius: $mainBorderRadius;
     overflow: hidden;
 
@@ -200,19 +202,24 @@
   }
   .figure-wrapper {
     &::before {
+      inset-inline-end: 50%;
+
       @include sm {
-        left: 0;
+        inset-inline-end: 0;
+      }
+      @include dir {
+        transform: rotate(25deg);
       }
     }
   }
 
-  margin-bottom: 30px;
+  margin-bottom: 75px;
   .asp-om {
     @include p-bottom(390.34, 635.59);
-    left: 40%;
+    inset-inline-end: 40%;
 
     @include sm {
-      left: 0;
+      inset-inline-end: 0;
     }
   }
 }
@@ -226,20 +233,24 @@
 
   .figure-wrapper {
     &::before {
-      right: 50%;
+      inset-inline-start: 50%;
       transform: rotate(25deg);
 
       @include sm {
-        right: 0;
+        inset-inline-start: 0;
+      }
+
+      @include dir {
+        transform: rotate(-25deg);
       }
     }
   }
   .asp-om {
     @include p-bottom(390.34, 635.59);
-    right: 40%;
+    inset-inline-start: 40%;
 
     @include sm {
-      right: 0;
+      inset-inline-start: 0;
     }
   }
 }

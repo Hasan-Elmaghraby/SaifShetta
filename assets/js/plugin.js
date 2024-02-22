@@ -241,13 +241,12 @@ function customDropdown() {
 
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
-  spaceBetween: 100,
-  freeMode: true,
+
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
   autoplay: {
-    delay: 5000,
+    delay: 3000,
   },
 });

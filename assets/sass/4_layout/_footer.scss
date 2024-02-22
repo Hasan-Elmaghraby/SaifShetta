@@ -43,7 +43,7 @@
     content: "";
     position: absolute;
     background-color: rgba(#ffffff, 0.32);
-    right: 0;
+    inset-inline-start: 0;
 
     @include sm {
       display: none;
@@ -123,6 +123,10 @@
       background-color: transparent;
       border: 8px solid #3f3f3f;
       border-color: transparent #fff transparent transparent;
+
+      @include dir {
+        border-color: transparent transparent transparent #fff;
+      }
     }
   }
 }
