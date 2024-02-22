@@ -5,8 +5,9 @@ jQuery(document).ready(function ($) {
   verificationCodeSeprate();
   showPassword($);
   toggleSideMenuInSmallScreens($);
-  stickyHeader($);
+  // stickyHeader($);
   lazyLoad();
+  toggleActiveHeader($);
 });
 
 // functions init
@@ -250,3 +251,10 @@ var swiper = new Swiper(".mySwiper", {
     delay: 3000,
   },
 });
+
+function toggleActiveHeader($) {
+  // nav men activation
+  $(".header_list_item__").on("click", function (e) {
+    $(this).addClass("active").siblings().removeClass("active");
+  });
+}
