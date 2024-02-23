@@ -7,7 +7,8 @@ jQuery(document).ready(function ($) {
   toggleSideMenuInSmallScreens($);
   // stickyHeader($);
   lazyLoad();
-  toggleActiveHeader($);
+  // toggleActiveHeader($);
+  syncActiveSection($);
 });
 
 // functions init
@@ -252,9 +253,27 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-function toggleActiveHeader($) {
-  // nav men activation
-  $(".header_list_item__").on("click", function (e) {
-    $(this).addClass("active").siblings().removeClass("active");
+// function toggleActiveHeader($) {
+//   // nav men activation
+//   $(".header_list_item__").on("click", function (e) {
+//     $(this).addClass("active").siblings().removeClass("active");
+//   });
+// }
+
+// Add Active Class to
+function syncActiveSection($) {
+  // Add padding top to body when you want to fixed header
+  $("body").css("paddingTop", $(".fixed_header__").innerHeight());
+
+  $(window).scroll(function () {
+    $(".section-scroll").each(function () {
+      if ($(window).scrollTop() + 130 > $(this).offset().top) {
+        let scrollId = $(this).attr("id");
+
+        $(".nav-list-om li").removeClass("active");
+
+        $('.nav-list-om li[data-scroll="' + scrollId + '"]').addClass("active");
+      }
+    });
   });
 }

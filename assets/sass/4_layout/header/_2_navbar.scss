@@ -75,7 +75,7 @@
         a {
           font-size: 1.6rem;
           color: $primaryColor;
-          font-weight: 700;
+          // font-weight: 700;
           // border-bottom: 3px solid $primaryColor !important;
           position: relative;
 
@@ -84,8 +84,7 @@
             content: "";
             position: absolute;
             background-color: $primaryColor;
-            left: 65%;
-            transform: translateX(-50%);
+            inset-inline-start: 0;
 
             @include sm {
               display: none;
