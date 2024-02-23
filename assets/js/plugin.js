@@ -6,9 +6,9 @@ jQuery(document).ready(function ($) {
   showPassword($);
   toggleSideMenuInSmallScreens($);
   // stickyHeader($);
+  syncActiveSection($);
   lazyLoad();
   // toggleActiveHeader($);
-  syncActiveSection($);
 });
 
 // functions init
