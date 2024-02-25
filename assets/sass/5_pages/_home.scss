@@ -303,7 +303,7 @@
             height: 7px;
             background-color: $primaryColor;
             top: 6px;
-            right: -10px;
+            inset-inline-start: -10px;
             border-radius: 3px;
 
             @include xs {
@@ -317,7 +317,7 @@
             height: 20px;
             background-color: rgba($primaryColor, 0.12);
             display: inline-block;
-            right: -10px;
+            inset-inline-start: -10px;
             top: 0;
             border-radius: 3px;
 
