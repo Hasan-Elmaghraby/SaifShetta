@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="assets/css/all.min.css" />
   <link rel="stylesheet" href="assets/css/swiper.min.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
 </head>
 
 <body>
@@ -55,6 +56,9 @@
               </li>
               <li class="header_list_item__" data-scroll="projects">
                 <a href="#projects">مشاريعنا</a>
+              </li>
+              <li class="header_list_item__" data-scroll="gallary">
+                <a href="#gallary">المعرض</a>
               </li>
               <li class="header_list_item__" data-scroll="contact-us">
                 <a href="#contact-us"> تواصل معنا</a>
@@ -439,7 +443,7 @@
       <div class="projects-wrapper">
         <div class="row row_modify with_row_gap">
           <div class="col-lg-4 col-md-6">
-            <div class="project-card">
+            <a href="trip_details.html" class="project-card link__">
               <div class="image-wrapper">
                 <figure class="figure__ loading-omd asp-om ">
                   <img class="img-om lazy-omd" data-src="assets/images/our-projects/madina.jpg" alt="">
@@ -448,10 +452,10 @@
               <h3 class="title">رحلة المدينة المنورة</h3>
               <p class="parg">ههنا تكتب نبذة مفصلة عن جميع تفاصيل الرحلة من
                 مواعيد والمميزات وبرنامج الرحلة .... إلخ</p>
-            </div>
+            </a>
           </div>
           <div class="col-lg-4 col-md-6">
-            <div class="project-card">
+            <a href="trip_details.html" class="project-card link__">
               <div class="image-wrapper">
                 <figure class="figure__ loading-omd asp-om ">
                   <img class="img-om lazy-omd" data-src="assets/images/our-projects/Hajj.webp" alt="">
@@ -460,10 +464,10 @@
               <h3 class="title">رحلة مكة المكرمة</h3>
               <p class="parg">ههنا تكتب نبذة مفصلة عن جميع تفاصيل الرحلة من
                 مواعيد والمميزات وبرنامج الرحلة .... إلخ</p>
-            </div>
+            </a>
           </div>
           <div class="col-lg-4 col-md-6">
-            <div class="project-card">
+            <a href="trip_details.html" class="project-card link__">
               <div class="image-wrapper">
                 <figure class="figure__ loading-omd asp-om ">
                   <img class="img-om lazy-omd" data-src="assets/images/our-projects/madina.jpg" alt="">
@@ -472,12 +476,56 @@
               <h3 class="title">رحلة المدينة المنورة</h3>
               <p class="parg">ههنا تكتب نبذة مفصلة عن جميع تفاصيل الرحلة من
                 مواعيد والمميزات وبرنامج الرحلة .... إلخ</p>
-            </div>
+            </a>
           </div>
         </div>
       </div>
   </section>
   <!-- End Home Projects -->
+
+  <!-- Start Home Gallary -->
+  <section class="home-gallary default_section__ section-scroll" id="gallary">
+    <div class="container">
+
+      <div class="page_head_wrapper center">
+        <h3 class="page_main_title__  ">المعرض</h3>
+      </div>
+
+
+      <div class="gallary-wrapper">
+
+        <div class="row row_modify with_row_gap">
+
+          <div class="col-lg-4 col-md-6">
+            <a href="assets/images/our-projects/Hajj.webp" data-fancybox="gallery">
+              <figure class="figure__ loading-omd asp-om ">
+                <img class="img-om lazy-omd" data-src="assets/images/our-projects/Hajj.webp" alt="">
+              </figure>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <a href="assets/images/our-projects/madina.jpg" data-fancybox="gallery">
+              <figure class="figure__ loading-omd asp-om ">
+                <img class="img-om lazy-omd" data-src="assets/images/our-projects/madina.jpg" alt="">
+              </figure>
+            </a>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6">
+            <a href="assets/images/our-projects/Hajj.webp" data-fancybox="gallery">
+              <figure class="figure__ loading-omd asp-om ">
+                <img class="img-om lazy-omd" data-src="assets/images/our-projects/Hajj.webp" alt="">
+              </figure>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+  </section>
+  <!-- End Home Gallary -->
 
   <!-- Start Contact us-->
   <section class="contact-us default_section__  section-scroll" id="contact-us">
@@ -549,6 +597,9 @@
               <a href="#projects">مشاريعنا</a>
             </li>
             <li>
+              <a href="#gallary">المعرض</a>
+            </li>
+            <li>
               <a href="#contact-us"> تواصل معنا</a>
             </li>
           </ul>
@@ -604,6 +655,7 @@
 
   <!-- start js include  -->
   <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/jquery.fancybox.min.js"></script>
   <script src="assets/js/popper.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/bootstrap-select.min.js"></script>

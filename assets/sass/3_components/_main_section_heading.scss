@@ -1,10 +1,10 @@
 .section_main_title__ {
-  font-size: 2.9rem;
+  font-size: 2rem;
   font-weight: 700;
   width: fit-content;
-  color: $primaryColor;
+  color: $secondaryColor;
   margin-bottom: 30px;
-  
+
   @include xs {
     font-size: 1.8rem;
   }
@@ -13,7 +13,7 @@
     margin-bottom: 0;
   }
 
-  &.small_margin_bottom__  {
+  &.small_margin_bottom__ {
     margin-bottom: 15px;
   }
 }
@@ -23,14 +23,14 @@
   font-weight: 400;
   color: $paragraphSecondaryColor;
   margin: 0;
-  
+
   @include xs {
     font-size: 1.2rem;
   }
 }
 
 .section_head_wrapper {
-  margin-bottom: 40px;
+  margin-bottom: 2rem;
 
   @include sm {
     margin-bottom: 25px;
@@ -63,7 +63,7 @@
     .section_sub_title__ {
       color: #fff;
 
-      &::after , 
+      &::after,
       &::before {
         background-color: #fff;
       }

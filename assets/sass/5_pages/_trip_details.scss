@@ -1,0 +1,17 @@
+.trip_figure_wrapper {
+  margin-bottom: 3rem;
+  border-radius: 15px;
+  overflow: hidden;
+
+  .figure__ {
+    @include p-bottom(550, 1400);
+  }
+}
+
+.gallary-wrapper {
+  .figure__ {
+    border-radius: 20px;
+    overflow: hidden;
+    padding-bottom: 70%;
+  }
+}
